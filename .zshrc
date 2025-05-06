@@ -6,7 +6,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Native settings for Zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="mm/dd/yyyy"
 
@@ -40,9 +40,13 @@ source ${(q-)ZSH_CUSTOM:-$ZSH/custom}/plugins/zsh-autosuggestions/zsh-autosugges
 
 # Aliases
 alias zshconfig="nano ~/.zshrc"
+alias prod="cd ~/products"
 alias proj="cd ~/projects"
+alias work="cd ~/workspace"
 alias ufrj="cd ~/ufrj"
+
 alias intj="cd /mnt/c/Users/andra/IdeaProjects"
+
 alias python3="python3 -q"
 alias dcu="docker-compose up -d"
 alias dcd="docker-compose down -d"
@@ -54,3 +58,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Load Powerlevel10k config if it exists
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+
+source ~/.scripts/git-push.sh
+
